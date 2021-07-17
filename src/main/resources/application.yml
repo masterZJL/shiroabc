@@ -1,0 +1,16 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /shiro
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/shiro_abc?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath*:/mappers/*.xml
